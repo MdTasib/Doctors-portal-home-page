@@ -14,3 +14,6 @@ img {
 .active {
   color: #1CC7C1;
 }
+.active-bg {
+  background-color: #1CC7C1;
+}
