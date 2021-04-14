@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
+import AppointmentHeader from '../../Appointment/AppointmentHeader/AppointmentHeader';
+import BookAppointment from '../../Appointment/BookAppointment/BookAppointment';
 import Footer from '../../Shared/Footer/Footer';
-import AppointmentHeader from '../AppointmentHeader/AppointmentHeader';
-import BookAppointment from '../BookAppointment/BookAppointment';
 
 const Appointment = () => {
     const [selectedDate, setSelectedDate] = useState(new Date());
@@ -12,9 +12,9 @@ const Appointment = () => {
     return (
         <div>
             <Navbar />
-            <AppointmentHeader handleDateChange={handleDateChange} />
-            <BookAppointment date={selectedDate} />
-            <Footer />
+            <AppointmentHeader handleDateChange={handleDateChange}></AppointmentHeader>
+            <BookAppointment date={selectedDate}></BookAppointment>
+            <Footer></Footer>
         </div>
     );
 };

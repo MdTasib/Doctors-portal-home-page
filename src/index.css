@@ -11,9 +11,9 @@ code {
 img {
   display: inline-block;
 }
-.active {
+.active, .text-brand {
   color: #1CC7C1;
 }
-.active-bg {
+.active-bg, .btn-brand{
   background-color: #1CC7C1;
 }
